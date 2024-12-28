@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-black">
+    <div class="main d-flex justify-content-center align-items-center ">
+        <div class="container">
+            <div class="searchContainer d-flex justify-content-center">
+                <div class="content d-flex justify-content-center align-items-center gap-3">
+                <input type="text" id="searchInput" placeholder="Search any location..">
+                <i onclick="searchCity()" id="search" class="  fa-solid fa-magnifying-glass text-white "></i>
+            </div>
+            </div>
+            <div class="imageContainer flex-column d-flex justify-content-center align-items-center mt-3  text-white">
+                <p class="city">New York</p>
+                <img id="weatherImg" src="./assets/weather-icon.png" alt="">
+                <p class="temp">15<span>°C</span></p>
+                <p class="weather">Cloudy</p>
+                
+            </div>
+
+            <div class="nature text-white d-flex justify-content-around ">
+                <div class="humidity d-flex gap-4">
+                    <i class="fa-solid fa-water "></i>
+                    <div class="text1">
+                        <span>0%</span>
+                        <div class="info"></div>
+                        Humadity
+                    </div>
+                </div>
+
+                <div class="wind d-flex gap-4">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text2">
+                        <span>50 Km/hr</span>
+                        <div class="info"></div>
+                        Wind
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
